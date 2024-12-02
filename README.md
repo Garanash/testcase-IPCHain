@@ -28,20 +28,6 @@ FROM:2021-02-01 18:45 TO:2021-02-01 19:00
 FROM:2021-01-28 13:29 TO:2021-01-28 13:49
 ```
 
-### Генерировать для теста его можно как то так
-
-```python
-from datetime import datetime, timedelta
-from random import randint
-
-for i in range(15):
-    rand_time = datetime.now() - timedelta(seconds=randint(0, 1000000))
-    start_dt = datetime.strftime(rand_time - timedelta(seconds=randint(0, 1000)), "%Y-%m-%d %H:%M")
-    end_dt = datetime.strftime(rand_time + timedelta(seconds=randint(0, 1000)), "%Y-%m-%d %H:%M")
-
-    print(f"FROM:{start_dt} TO:{end_dt}")
-```
-
 ## Решение и запуск
 
 Для запуска программы: склонируйте репозиторий.  
